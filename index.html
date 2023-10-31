@@ -15,34 +15,12 @@
 <body>
 
 
-    <nav id="navbar" class="nav-bar">
-    <div class="wrapper">
-        <p class="nav-bar__title"><i class="fa-solid fa-tree"></i> Forest</p>
-        <ul class="nav-bar__desktop">
-            <li>
-                <a class="nav-item  active Home" href="index.html#">Home</a>
-                <a class="nav-item aboutus" href="index.html#about-us">O nas</a>
-                <a class="nav-item ofert" href="index.html#ofert">Oferta</a>
-                <a  class="nav-item contact" href="contact.html">Kontakt</a>
-            </li>
-        </ul>
-
-
-        <button class="nav-bar__mobile hamburger">
-            <div class="hamburger__box">
-                <div class="hamburger__inner"></div>
-            </div>
-        </button>
-
-
-        <ul class="nav-bar__mobile-menu ">
-            <li>
-                <a class="nav-item  active" href="index.html#">Home</a>
-                <a class="nav-item" href="index.html#about-us">O nas</a>
-                <a class="nav-item" href="index.html#ofert">Oferta</a>
-                <a class="nav-item contact" href="contact.html">Kontakt</a>
-            </li>
-        </ul>
+    <nav id="navbar" class="navbar">
+    <button class="navbar__btn">
+        <div class="navbar__box">
+            <div class="navbar__box--bars"></div>
+        </div>
+    </button>
 
     </div>
 
@@ -51,130 +29,10 @@
 
 </nav>
 
-    <main>
-        <section class="hero-bg">
-            <div class="hero-bg__shadow">
+    
 
-                <div class="hero-bg__text">
-                    <h2 class="hero-bg__title">Forest group</h2>
-                    <p class="">Najpiekniejszy park w Twojej okolicy!</p>
-                </div>
-            </div>
-        </section>
+   <!-- <div> @include 'footer.kit'</div> -->
 
-        <section id="about-us" class="about-us">
-            <div class="wrapper">
-                <h2 class="about-us__title">O nas</h2>
-                <div class="about-us__box">
-                    <img class="about-us__box--img" src="./dist/img/waters-3095682_640.jpg"
-                        alt="Rzeka plynaca przez zielony las">
-                    <div class="about-us__box--text">
-                        <h3>Niezapomniane przygody</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            www.MMCSchool.pl</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero-bg2">
-            <div class="hero-bg2__shadow">
-
-                <h2 class="hero-bg2__title">Przygoda dla calej rodziny</h2>
-            </div>
-        </section>
-
-        <section id="ofert" class="ofert">
-            <div class="wrapper">
-                <h2 class="ofert__title">OFERTA</h2>
-                <p>Wybierz jedną z naszych wspaniałych ofert!</p>
-
-                <div class="ofert__cards">
-                    <div class="ofert__cards--box one">
-                        <h3>Demo</h3>
-                        <p>$0</p>
-                        <ul>
-                            <li><i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li><i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li style="color: #8c8c8c;"> <i class="fa-solid fa-check" style="color: #8c8c8c;"></i> opcja
-                                poza pakietem</li>
-                            <li style="color: #8c8c8c;"> <i class="fa-solid fa-check" style="color: #8c8c8c;"></i> opcja
-                                poza pakietem</li>
-                            <li style="color: #8c8c8c;"> <i class="fa-solid fa-check" style="color: #8c8c8c;"></i> opcja
-                                poza pakietem</li>
-                        </ul>
-                        <button class="ofert_btn"><a href="">Wybierz</a></button>
-                    </div>
-                    <div class="ofert__cards--box second">
-                        <h3>Standard</h3>
-                        <p>$99</p>
-                        <ul>
-                            <li><i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li><i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li> <i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li style="color: #8c8c8c;"> <i class="fa-solid fa-check" style="color: #8c8c8c;"></i> opcja
-                                poza pakietem</li>
-                            <li style="color: #8c8c8c;"> <i class="fa-solid fa-check" style="color: #8c8c8c;"></i> opcja
-                                poza pakietem</li>
-                        </ul>
-                        <button class="ofert_btn"><a href="">Wybierz</a></button>
-                    </div>
-                    <div class="ofert__cards--box third">
-                        <h3>Premium</h3>
-                        <p>$299</p>
-                        <ul>
-                            <li><i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li><i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li> <i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li> <i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                            <li> <i class="fa-solid fa-check" style="color: #75cb5d;"></i> opcja w pakiecie</li>
-                        </ul>
-                        <button class="ofert_btn"><a href="">Wybierz</a></button>
-                    </div>
-
-                </div>
-
-                <button class="ofert__btn"><a href="offert.html">Odkryj Wiecej</a></button>
-            </div>
-
-        </section>
-    </main>
-
-    <footer>
-    <div class="wrapper">
-        <div class="left-side">
-            <h3><i class="fa-solid fa-tree"></i> Forest</h3>
-        </div>
-
-        <div class="right-side">
-            <ul>
-                <li class="footer__title">O nas</li>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Parki</a></li>
-                <li><a href="#">Opinie</a></li>
-            </ul>
-            <ul>
-                <li class="footer__title">Nasza firma</li>
-                <li><a href="#">Praca</a></li>
-                <li><a href="#">Kadry</a></li>
-                <li><a href="#">Zarzad</a></li>
-            </ul>
-            <ul>
-                <li class="footer__title">Dokumenty</li>
-                <li><a href="#">Wnioski</a></li>
-                <li><a href="#">Rezerwacje</a></li>
-
-            </ul>
-        </div>
-
-    </div>
-    <hr>
-    <p class="yearcomp">&copy;<span class="year">2021</span> Forest Group Company Ltd.</p>
-</footer>
     <script src="./dist/js/scrollspy.min.js"></script>
     <script src="./dist/js/script.min.js"></script>
 </body>

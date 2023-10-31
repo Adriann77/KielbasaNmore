@@ -1,0 +1,11 @@
+@mixin burgerBtnBars{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    background-color: white;
+    content: '';
+    transition: width .3s;
+
+   
+}
