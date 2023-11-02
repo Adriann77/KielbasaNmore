@@ -1,11 +1,17 @@
-@mixin burgerBtnBars{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 3px;
-    background-color: white;
-    content: '';
-    transition: width .3s;
+@mixin burgerBtnBars {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 3px;
+	background-color: white;
+	content: '';
+	transition: width 0.3s, transform .3s;
+}
 
-   
+@mixin navItemAtribute {
+	content: '';
+	position: absolute;
+	height: 30px;
+	width: 30px;
+    transition: all .3s;
 }
