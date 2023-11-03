@@ -15,13 +15,13 @@
 	&__box {
 		width: 40px;
 		height: 30px;
+
 		&--bars {
 			position: relative;
 			top: 0;
 			right: 0;
 			width: 100%;
 			height: 3px;
-
 			background-color: white;
 
 			&::before {
@@ -36,24 +36,24 @@
 				width: 33%;
 			}
 		}
-	}
-	&:hover .navbar__box--bars::before {
-		width: 100%;
-	}
-	&:hover .navbar__box--bars::after {
-		width: 100%;
+		&:hover .navbar__box--bars::before {
+			width: 100%;
+		}
+		&:hover .navbar__box--bars::after {
+			width: 100%;
+		}
 	}
 }
 
 .windwo {
 	overflow: hidden;
 	position: absolute;
-
 	width: 100vw;
 
 	.nav {
 		position: sticky;
 		top: 0;
+		height: 100vh;
 		background-color: rgb(205, 54, 54);
 		transform: translate(100%);
 		transition: transform 0.3s;
@@ -108,35 +108,36 @@
 		justify-content: center;
 		align-items: center;
 	}
+}
 
-	.activeBurgerIcon {
-		width: 40px;
-		height: 30px;
-		.navbar__box--bars {
-			position: relative;
-			top: 0;
-			right: 0;
+.activeBurgerIcon {
+	width: 40px;
+	height: 30px;
+	.navbar__box--bars {
+		position: relative;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 0px;
+
+		background-color: white;
+
+		&::before {
+			@include mixin.burgerBtnBars;
+			top: 13px;
 			width: 100%;
-			height: 0px;
+			transform: rotate(-45deg);
+		}
 
-			background-color: white;
-
-			&::before {
-				@include mixin.burgerBtnBars;
-				top: 13px;
-				width: 100%;
-				transform: rotate(-45deg);
-			}
-
-			&::after {
-				@include mixin.burgerBtnBars;
-				top: 13px;
-				width: 100%;
-				transform: rotate(45deg);
-			}
+		&::after {
+			@include mixin.burgerBtnBars;
+			top: 13px;
+			width: 100%;
+			transform: rotate(45deg);
 		}
 	}
 }
+
 // NAV //
 // NAV //
 // NAV //

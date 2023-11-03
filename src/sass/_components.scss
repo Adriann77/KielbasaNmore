@@ -1,0 +1,37 @@
+.title {
+	position: relative;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 2.5rem;
+}
+
+.section-padding-bot {
+    z-index: -1;
+	position: relative;
+	overflow: hidden;
+	&::after {
+		position: absolute;
+		content: '';
+		height: 5vh;
+		width: 30%;
+		background-color: #fff;
+		bottom: -1px;
+		margin: 0px -20px;
+		right: 0;
+		transform: skewX(-30deg);
+	}
+}
+.section-padding-top {
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '';
+		height: 5vh;
+		width: 30%;
+		background-color: #fff;
+		top: 0;
+		margin: 0px -20px;
+		left: 0;
+		transform: skewX(-30deg);
+	}
+}
