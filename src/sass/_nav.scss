@@ -23,7 +23,7 @@
 			width: 100%;
 			height: 3px;
 			background-color: white;
-
+			box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 			&::before {
 				@include mixin.burgerBtnBars;
 				top: 13px;
@@ -46,70 +46,72 @@
 }
 
 .windwo {
+	display: none;
 	overflow: hidden;
-	position: absolute;
-	width: 100vw;
-
-	.nav {
-		position: sticky;
-		top: 0;
-		height: 100vh;
-		background-color: rgb(205, 54, 54);
-		transform: translate(100%);
-		transition: transform 0.3s;
-		&__items {
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-			height: 100%;
-			flex-direction: column;
-			padding: 10rem 0;
-		}
-
-		&__item {
-			position: relative;
-			font-size: 2rem;
-			padding: 1.5rem;
-			text-decoration: none;
-			color: color.$main-color;
-
-			&::before {
-				@include mixin.navItemAtribute;
-				border-left: 1.5px solid green;
-				border-bottom: 1.5px solid green;
-				bottom: 0;
-				left: 0;
-			}
-			&::after {
-				@include mixin.navItemAtribute;
-				top: 0;
-				right: 0;
-				border-right: 1.5px solid green;
-				border-top: 1.5px solid green;
-			}
-
-			&:hover {
-				&::before {
-					height: 105%;
-					width: 105%;
-				}
-				&::after {
-					height: 105%;
-					width: 105%;
-				}
-			}
-		}
-	}
-	.activeNavWindow {
-		transform: translate(0);
-		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
 }
 
+.nav {
+	
+	position: sticky;
+	top: 0;
+	background-color: rgb(205, 54, 54);
+	transform: translate(100%);
+	transition: transform 0.3s;
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 100%;
+		flex-direction: column;
+		padding: 10rem 0;
+	}
+
+	&__item {
+		position: relative;
+		font-size: 2rem;
+		padding: 1.5rem;
+		text-decoration: none;
+		color: color.$main-color;
+
+		&::before {
+			@include mixin.navItemAtribute;
+			border-left: 1.5px solid green;
+			border-bottom: 1.5px solid green;
+			bottom: 0;
+			left: 0;
+		}
+		&::after {
+			@include mixin.navItemAtribute;
+			top: 0;
+			right: 0;
+			border-right: 1.5px solid green;
+			border-top: 1.5px solid green;
+		}
+
+		&:hover {
+			&::before {
+				height: 105%;
+				width: 105%;
+			}
+			&::after {
+				height: 105%;
+				width: 105%;
+			}
+		}
+	}
+}
+.activeNavWindow {
+	transform: translate(0);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.activeWinwdo{
+	display: block;
+}
 .activeBurgerIcon {
 	width: 40px;
 	height: 30px;
@@ -119,7 +121,8 @@
 		right: 0;
 		width: 100%;
 		height: 0px;
-
+		box-shadow: none;
+	
 		background-color: white;
 
 		&::before {
