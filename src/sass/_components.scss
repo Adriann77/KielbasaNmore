@@ -28,7 +28,7 @@
 	z-index: -1;
 	position: relative;
 	overflow: hidden;
-	&::after {
+	&::before {
 		position: absolute;
 		content: '';
 		height: 5vh;
