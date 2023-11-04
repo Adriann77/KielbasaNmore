@@ -16,6 +16,7 @@ html {
 }
 
 body {
+	z-index: 0;
 	background-color: #fff;
 	color: color.$main-color;
 	font-family: 'Montserrat', sans-serif;
@@ -86,7 +87,7 @@ main {
 	}
 
 	.menu {
-		background-image: url(/dist/img/IMG_8467.jpeg);
+		background-image: url(../img/IMG_8467.jpeg);
 		padding: 20rem 0;
 		background-attachment: fixed;
 		background-position: bottom;
