@@ -86,12 +86,113 @@ main {
 		}
 	}
 
-	.menu {
+	.gap-bg {
 		background-image: url(../img/IMG_8467.jpeg);
 		padding: 20rem 0;
 		background-attachment: fixed;
 		background-position: bottom;
 		background-size: cover;
+	}
+
+	.menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+
+		.wrapper {
+			max-width: 1400px;
+			overflow: hidden;
+		}
+
+		.box {
+			position: relative;
+			height: 400px;
+			margin: 10px;
+			border-radius: 8px;
+			background-size: cover;
+			background-position: center;
+			overflow: hidden;
+			margin-bottom: 7.2em;
+
+			&__btn {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				font-size: 4rem;
+				background: none;
+				border: none;
+				color: royalblue;
+				text-shadow: 1px 1px 1px black;
+				cursor: help;
+				z-index: 1;
+			}
+
+			&__text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				position: absolute;
+				color: white;
+				font-size: 2rem;
+				text-shadow: 1px 1px 1px black;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				clip-path: circle(0% at 50% 90%);
+				text-align: center;
+				padding: 10px 10px;
+				background-color: rgba(0, 0, 0, 0.6);
+				transition: all 0.3s;
+				overflow: hidden;
+				word-wrap: break-word;
+				overflow: hidden;
+			}
+
+			&__btn:hover {
+				transform: scale(1.1);
+				~ .box__text {
+					clip-path: circle(100% at 50% 50%);
+					backdrop-filter: blur(10px);
+				}
+			}
+			&__title {
+				color: royalblue;
+				font-size: 3rem;
+				text-shadow: 1px 1px 3px black;
+				padding: 60px 30px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+			}
+		}
+
+		.one {
+			background-image: url(../img/golabki.jpg);
+		}
+
+		.two {
+			background-image: url(../img/cheese.jpg);
+		}
+
+		.three {
+			background-image: url(../img/frytki.jpg);
+		}
+
+		.four {
+			background-image: url(../img/onion.jpg);
+		}
+
+		.fifth {
+			background-image: url(../img/tacos.jpg);
+		}
+
+		.sixth {
+			background-image: url(../img/salmon.jpg);
+		}
+		.seventh {
+			background-image: url(../img/platter.jpg);
+		}
 	}
 }
 
