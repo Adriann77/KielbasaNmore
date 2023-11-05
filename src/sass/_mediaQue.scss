@@ -14,6 +14,46 @@
 	}
 }
 @media (min-width: 992px) {
+
+	.navbar{
+		.navbar__box{
+			width: 60px;
+			height: 50px;
+		}
+		.navbar__box--bars{
+			height: 4px;
+		}
+
+
+		.navbar__box--bars::before{
+			top: 20px;
+			height: 4px;
+			
+		}
+		.navbar__box--bars::after{
+			top: 40px;
+			height: 4px;
+
+		}
+	}
+
+	.activeBurgerIcon{
+		width: 60px;
+		height: 50px;
+
+		.navbar__box--bars{
+			height: 0px;
+		}
+		.navbar__box--bars::before{
+
+			top: 20px;
+		}
+		.navbar__box--bars::after{
+
+			top: 20px;
+		}
+	}
+
 	main {
 		.about-us {
 			.box {
@@ -44,9 +84,8 @@
 		}
 
 		.hero-bg {
+			background-position: bottom;
 			background-attachment: fixed;
-			background-position: center;
-			background-size: cover;
 			.hero-bg__title {
 				font-size: 4rem;
 				margin: 120px 50px;
@@ -60,11 +99,12 @@
 		.gap-bg {
 			background-attachment: fixed;
 			background-position: bottom;
+			padding: 40rem 0;
 		}
 	}
 }
 @media (min-width: 1200px) {
 	header {
-		height: 100vh;
+		height: 60vh;
 	}
 }
