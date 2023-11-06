@@ -2,12 +2,13 @@
 
 
 
+
 $(document).ready(function () {
 	$('.reviews__boxes').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 2500,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		arrows: true,
 		mobileFirst: true,
 		responsive: [
@@ -22,7 +23,7 @@ $(document).ready(function () {
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 3,
-					slidesToScroll: 2,
+					slidesToScroll: 1,
 				},
 			},
 			{
@@ -34,4 +35,44 @@ $(document).ready(function () {
 			}
 		],
 	})
+
+	$('.opinion__boxes').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		arrows: false,
+		mobileFirst: true,
+		responsive: [
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				},
+			},
+			{
+				breakpoint: 550,
+				settings:{
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			}
+		],
+	})
+	  
 })
+
+
+
+
+
+
+
