@@ -21,3 +21,14 @@ allNavLinks.forEach(link => link.addEventListener('click', ()=>{
 		burgerBox.classList.toggle('activeBurgerIcon');
 	}, 1);
 }))
+
+
+
+window.addEventListener('DOMContentLoaded', ()=>{
+	const prevBtn = document.querySelector('.slick-prev')
+	const nextBtn = document.querySelector('.slick-next')
+	prevBtn.textContent = '<'
+	nextBtn.textContent = '>'
+
+	
+})

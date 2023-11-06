@@ -26,7 +26,7 @@ body {
 header {
 	height: 60vh;
 	.hero-bg {
-		background-attachment:initial;
+		background-attachment: initial;
 		position: relative;
 		background-image: url(../img/header-bg.jpg);
 		z-index: -1;
@@ -48,15 +48,14 @@ header {
 		&__title {
 			margin: 100px 30px;
 		}
-
-		
-}
+	}
 }
 
 main {
 	.about-us {
 		.box {
 			width: 100%;
+			
 		}
 
 		&__left--img {
@@ -101,34 +100,30 @@ main {
 		justify-content: center;
 		margin: 0 auto;
 
-		.slick-track{
+		.review__boxes {
+			margin: 0;
+			padding: 0;
+		}
+
+		.slick-track {
 			z-index: 0;
 		}
 
-		.slick-prev{
-			position: absolute;
-			left: 10px;
-			bottom: -10px;
-			font-size: 4rem;
-			padding: 1rem;
-			cursor: pointer;
-			z-index: 1;
+		.slick-prev {
+			@include mixin.slickBtns;
 
+			left: 0;
 		}
-		.slick-next{
-			cursor: pointer;
-			position: absolute;
-			bottom: -10px;
-			padding: 1rem;
-			right: 10px;
-			font-size: 4rem;
-			z-index: 1;
+		.slick-next {
+			@include mixin.slickBtns;
+			right: 0;
 		}
 
 		.wrapper {
 			max-width: 1400px;
 			overflow: hidden;
 			padding: 3rem 0;
+			margin: 0;
 		}
 
 		.box {
@@ -136,58 +131,17 @@ main {
 			height: 400px;
 			margin: 10px;
 			border-radius: 8px;
-			background-size: cover;
 			background-position: center;
+			background-size: cover;
 			overflow: hidden;
 			margin-bottom: 7.2em;
+			box-shadow: rgba(0, 0, 0, 0.46) 0px 3px 6px, rgba(0, 0, 0, 0.53) 0px 3px 6px;
 
-			&__btn {
-				position: absolute;
-				right: 10px;
-				top: 10px;
-				font-size: 4rem;
-				background: none;
-				border: none;
-				color: royalblue;
-				text-shadow: 1px 1px 1px black;
-				cursor: help;
-				z-index: 1;
-			}
-
-			&__text {
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-end;
-				position: absolute;
-				color: white;
-				font-size: 2rem;
-				text-shadow: 1px 1px 1px black;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				clip-path: circle(0% at 50% 90%);
-				text-align: center;
-				padding: 10px 10px;
-				background-color: rgba(0, 0, 0, 0.6);
-				transition: all 0.3s;
-				overflow: hidden;
-				word-wrap: break-word;
-				overflow: hidden;
-			}
-
-			&__btn:hover {
-				transform: scale(1.1);
-				~ .box__text {
-					clip-path: circle(100% at 50% 50%);
-					backdrop-filter: blur(10px);
-				}
-			}
 			&__title {
-				color: royalblue;
+				color: rgb(239, 29, 29);
 				font-size: 3rem;
 				text-shadow: 1px 1px 3px black;
-				padding: 60px 30px;
+				padding: 2rem;
 				letter-spacing: 1px;
 				text-transform: uppercase;
 			}
@@ -211,6 +165,7 @@ main {
 
 		.fifth {
 			background-image: url(../img/tacos.jpg);
+			background-position: 50% 10%;
 		}
 
 		.sixth {
@@ -223,8 +178,3 @@ main {
 }
 
 @import 'mediaQue';
-
-
-
-
-
