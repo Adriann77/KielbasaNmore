@@ -3,6 +3,7 @@ const navWindow = document.querySelector('.nav');
 const burgerBox = document.querySelector('.navbar__box');
 const windwo = document.querySelector('.windwo');
 const allNavLinks = document.querySelectorAll('.nav__item')
+const footerYear = document.querySelector('.year')
 
 hamburgerIcon.addEventListener('click', () => {
 
@@ -29,6 +30,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
 	const nextBtn = document.querySelector('.slick-next')
 	prevBtn.textContent = '<'
 	nextBtn.textContent = '>'
+	footerYear.textContent = new Date().getFullYear()
+
 
 	
 })
+
+

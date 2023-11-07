@@ -1,0 +1,40 @@
+footer {
+	position: relative;
+	height: 25vh;
+	background-color: red;
+	color: #333;
+    font-size: 2rem;
+
+
+	.wrapper {
+        height: 100%;
+		display: flex;
+		align-items: center;
+        justify-content: space-around;
+
+       
+	}
+
+    .socials, .contact{
+        padding: 1rem;
+    }
+
+
+
+    .bottom-footer{
+        display: flex;
+
+        .yearcomp{
+          position: absolute;
+          bottom: 0;
+
+          width: 100%;
+          text-align: center;
+          padding: 1rem;
+
+          background-color: rgb(255, 255, 255, .8);
+         
+        }
+    }
+	
+}
