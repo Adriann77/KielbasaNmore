@@ -48,6 +48,7 @@ header {
 
 		&__title {
 			margin: 100px 30px;
+			color: #fff;
 		}
 	}
 }
@@ -119,11 +120,17 @@ main {
 		.slick-prev {
 			@include mixin.slickBtns;
 
-			left: 0;
+			left: -50px;
+
+			
+
+
 		}
 		.slick-next {
 			@include mixin.slickBtns;
 			right: 0;
+
+
 		}
 
 		.wrapper {
