@@ -14,42 +14,36 @@
 	}
 }
 @media (min-width: 992px) {
-
-	.navbar{
-		.navbar__box{
+	.navbar {
+		.navbar__box {
 			width: 60px;
 			height: 50px;
 		}
-		.navbar__box--bars{
+		.navbar__box--bars {
 			height: 4px;
 		}
 
-
-		.navbar__box--bars::before{
+		.navbar__box--bars::before {
 			top: 20px;
 			height: 4px;
-			
 		}
-		.navbar__box--bars::after{
+		.navbar__box--bars::after {
 			top: 40px;
 			height: 4px;
-
 		}
 	}
 
-	.activeBurgerIcon{
+	.activeBurgerIcon {
 		width: 60px;
 		height: 50px;
 
-		.navbar__box--bars{
+		.navbar__box--bars {
 			height: 0px;
 		}
-		.navbar__box--bars::before{
-
+		.navbar__box--bars::before {
 			top: 20px;
 		}
-		.navbar__box--bars::after{
-
+		.navbar__box--bars::after {
 			top: 20px;
 		}
 	}
@@ -100,6 +94,33 @@
 			background-attachment: fixed;
 			background-position: bottom;
 			padding: 40rem 0;
+		}
+	}
+
+	footer {
+		font-size: 3rem;
+
+		.socials,
+		.contact {
+			h4 {
+				font-size: 2.5rem;
+			}
+		}
+
+		.socials {
+			.socials__links {
+				i {
+					font-size: 3rem;
+				}
+			}
+		}
+
+		.contact{
+			.contact__info{
+				div{
+					font-size: 1.8rem;
+				}
+			}
 		}
 	}
 }
